@@ -1,0 +1,25 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - phar://phpstan.phar/conf/bleedingEdge.neon
+
+parameters:
+
+    paths:
+        - app/
+
+    # Level 9 is the highest level
+    level: 9
+    typeAliases:
+        		Name: 'string'
+        		NameResolver: 'callable(): string'
+        		NameOrResolver: 'Name|NameResolver'
+
+    checkGenericClassInNonGenericObjectType: false
+
+#    ignoreErrors:
+#        - '#PHPDoc tag @var#'
+#
+#    excludePaths:
+#        - ./*/*/FileToBeExcluded.php
+#
+#    checkMissingIterableValueType: false
