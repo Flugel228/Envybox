@@ -27,6 +27,7 @@ class User extends Authenticatable
      * The attributes that should be hidden for serialization.
      *
      * @var array<int, string>
+     * @phpstan-ignore-next-line
      */
     protected $hidden = [
         'password',
