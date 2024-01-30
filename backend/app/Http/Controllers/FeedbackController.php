@@ -21,7 +21,7 @@ class FeedbackController extends Controller
             $saver = $factory->build('database');
             $saver->save($data);
         } catch (\InvalidArgumentException $e) {
-            return response()->json(['error' => $e], 500);
+            return response()->json(['error' => $e->getMessage()], 500);
         }
 
         return response()->json(['message' => 'Data saved successfully ']);
