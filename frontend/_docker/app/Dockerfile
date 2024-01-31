@@ -1,7 +1,5 @@
 FROM node:20
 
-RUN npm install -g @vue/cli
-
 WORKDIR /app
 COPY ../../package*.json ./
 
