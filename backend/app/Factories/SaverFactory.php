@@ -9,7 +9,7 @@ use App\Savers\Interfaces\SaverInterface;
 use InvalidArgumentException;
 
 /**
- * @implements SimpleFactoryInterface<DataSaver|EmailSaver>
+ * @implements SimpleFactoryInterface<SaverInterface>
  */
 class SaverFactory implements Interfaces\SimpleFactoryInterface
 {
