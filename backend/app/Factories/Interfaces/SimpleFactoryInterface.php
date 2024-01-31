@@ -5,7 +5,7 @@ namespace App\Factories\Interfaces;
 use App\Savers\Interfaces\SaverInterface;
 
 /**
- * @template T of SaverInterface
+ * @template T of object
  */
 interface SimpleFactoryInterface
 {
