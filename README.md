@@ -16,3 +16,7 @@
 10. ```composer install```
 11. ```exit```
 12. ```docker-compose up -d```
+
+## API Documentaion
+
+Для просмотра документации перейдите по ссылке - api.localhost:8876/api/documentation
